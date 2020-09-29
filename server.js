@@ -6,7 +6,7 @@ const auth = require('./auth');
 const path = require('path');
 const fs = require('fs');
 const app = express();
-const PORT = 4000;
+const process.env.PORT || 8080;
 
 app.use(cors());
 app.use(cookieParser());
